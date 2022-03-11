@@ -1,0 +1,87 @@
+﻿@page "/preparations"
+
+@using BlazorAdminPanel.Shared.MyComponent
+
+@* Обязательно для вызова метода Dispose, иначе метод вызываться не будет *@
+@implements IDisposable
+
+@inject Models.PreparationsTable preparationsTable
+
+@{
+
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+        <h3 class="text-dark mb-0">Препараты</h3>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-6 col-xl-6">
+            <_Preparations Table=@preparationsTable Title="Заполниность ячеек данным препаратом" />
+        </div>
+
+        <div class="col-lg-6 col-xl-6">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="text-secondary font-weight-bold m-0">Таблица данных</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th class="text-left">Название</th>
+                                    <th class="text-right">Кол-во препарата</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (Row i in preparationsTable.Rows)
+                                {
+                                    <tr>
+                                        <td>@i.Name</td>
+                                        <td>
+                                            <input @bind-value="@i.NumCustomers" @onblur="() => preparationsTable.WritePS()" class="rounded-0 border-0 form-control float-right text-success text-right" type="text" maxlength="12" minlength="1">
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+
+
+    // Асинхронная инициализация данных при загрузке данного компонента
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Run(() => preparationsTable.Read());
+
+        preparationsTable.UpdateEvent += UpdateDB;
+    }
+
+
+    public async void UpdateDB(object sender)
+    {
+        await InvokeAsync(() => StateHasChanged());
+    }
+
+
+    // Очистка перед удалением компонента
+    public void Dispose()
+    {
+
+        preparationsTable.UpdateEvent -= UpdateDB;
+
+        // throw new Exception("Удаление");
+    }
+
+}

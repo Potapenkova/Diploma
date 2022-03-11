@@ -1,0 +1,98 @@
+[
+  {
+    "Name": "Хлордиазэпоксид (элениум)",
+    "NumCustomers": 10000,
+    "Percent": 100,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Амидопирин",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Ацетилсалициловая кислота",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Аминазин",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Гексобарбитал",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Диазепан",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Имипрамин",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Клонидин",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Лидокаин",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Мефенитоин",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Морфин",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Примидон",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "Name": "Россия",
+    "NumCustomers": 8335,
+    "Percent": 43.96,
+    "ISO": "RU",
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Украина",
+    "NumCustomers": 2811,
+    "Percent": 14.82,
+    "ISO": "UA",
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "США",
+    "NumCustomers": 398,
+    "Percent": 2.1,
+    "ISO": "US",
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Канада",
+    "NumCustomers": 550,
+    "Percent": 2.9,
+    "ISO": "CA",
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Казахстан",
+    "NumCustomers": 4561,
+    "Percent": 24.05,
+    "ISO": "KZ",
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Германия",
+    "NumCustomers": 752,
+    "Percent": 3.97,
+    "ISO": "DE",
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Франция",
+    "NumCustomers": 704,
+    "Percent": 3.71,
+    "ISO": "FR",
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Китай",
+    "NumCustomers": 851,
+    "Percent": 4.49,
+    "ISO": "CN",
+    "Month": null,
+    "Earnings": 0
+  }
+]

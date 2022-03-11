@@ -1,0 +1,98 @@
+[
+  {
+    "Name": "Псков",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Москва",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Казань",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Санкт-Петербург",
+    "NumCustomers": 1000,
+    "Percent": 10,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Харьков",
+    "NumCustomers": 8456,
+    "Percent": 84.56,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Запорожье",
+    "NumCustomers": 4659,
+    "Percent": 46.59,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Нашвилл",
+    "NumCustomers": 10000,
+    "Percent": 100,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Брамптон",
+    "NumCustomers": 6782,
+    "Percent": 67.82,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Аксу",
+    "NumCustomers": 10200,
+    "Percent": 102,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Лейпциг",
+    "NumCustomers": 2487,
+    "Percent": 24.87,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Шамбери",
+    "NumCustomers": 8450,
+    "Percent": 84.5,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  },
+  {
+    "Name": "Цзинин",
+    "NumCustomers": 20545,
+    "Percent": 205.45,
+    "ISO": null,
+    "Month": null,
+    "Earnings": 0
+  }
+]

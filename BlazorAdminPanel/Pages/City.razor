@@ -1,0 +1,89 @@
+﻿@page "/city"
+
+
+@using BlazorAdminPanel.Shared.MyComponent
+
+@* Обязательно для вызова метода Dispose, иначе метод вызываться не будет *@
+@implements IDisposable
+
+@inject Models.CityTable cityTable
+
+@{
+}
+
+
+<div class="container-fluid">
+    <div class="d-sm-flex justify-content-between align-items-center mb-4">
+        <h3 class="text-dark mb-0">Занятость складов</h3>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-6 col-xl-6">
+            <_Preparations Table=@cityTable Title="Процент заполненности складов" />
+        </div>
+
+        <div class="col-lg-6 col-xl-6">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="text-secondary font-weight-bold m-0">Таблица данных</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th class="text-left">Название</th>
+                                    <th class="text-right">Кол-во занятх ячеек</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (Row i in cityTable.Rows)
+                                {
+                                    <tr>
+                                        <td>@i.Name</td>
+                                        <td>
+                                            <input @bind-value="@i.NumCustomers" @onblur="() => cityTable.WritePS() " class="rounded-0 border-0 form-control float-right text-success text-right" type="text" maxlength="12" minlength="1">
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+
+
+    // Асинхронная инициализация при загрузке данной страницы
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Run(() => cityTable.Read());
+
+        cityTable.UpdateEvent += UpdateDB;
+    }
+
+
+    public async void UpdateDB(object sender)
+    {
+        await InvokeAsync(() => StateHasChanged());
+    }
+
+
+    // Очистка перед удалением компонента
+    public void Dispose()
+    {
+
+        cityTable.UpdateEvent -= UpdateDB;
+
+        // throw new Exception("Удаление");
+    }
+
+}
