@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PharmacyAdmin</title>
+    <title>PharmacyPotapenkova</title>
     <base href="~/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
@@ -53,29 +53,21 @@
             jQuery('#vmap').vectorMap({
                 map: 'world_en',
                 backgroundColor: '#fff',
-                borderColor: '#000',
-                borderOpacity: 0.25,
-                borderWidth: 1,
-                color: _defCol, //'#AEF8DE',
+                borderColor: '#f7f3e1',
+                borderOpacity: 1,
+                borderWidth: 2,
+                color: '#ffd966',
                 enableZoom: false,
-                hoverColor: '#045C55',
-                hoverOpacity: null,
+                hoverColor: '#ff9933',
+                hoverOpacity: 0.7,
                 normalizeFunction: 'linear',
-                scaleColors: ['#001a00', '#001a00'],
-                selectedColor: _selCol, //'#51559E',
+                scaleColors: ['#ff9933', '#ff9933'],
+                selectedColor: '#ff9933',
                 multiSelectRegion: true,
 
                 // Выделенные регионы
-                selectedRegions: null, //['RU', 'UA', 'US', 'CA', 'DE', 'FR', 'KZ', 'CN'],
-                showTooltip: true,
-                //onRegionClick: function (element, code, region) {
-                //    var message = 'Регион - "'
-                //        + region
-                //        + '", код: '
-                //        + code.toUpperCase();
-
-                //    alert(message);
-                //}
+                selectedRegions: null, 
+                showTooltip: false,
 
             });
         }
@@ -111,10 +103,10 @@
             datasets: [{
                 data: [10, 19, 3, 5, 2, 3, 10, 19, 3, 0, 0, 0],
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)' // для типа line цвет оставляем только первый 'rgba(255, 99, 132, 0.5)'
+                    'rgba(255, 196, 80, 0.5)' 
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 110, 0, 0.4)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)',

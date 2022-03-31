@@ -5,11 +5,11 @@ html, body {
 }
 
 html, body {
-    color: #00664d
+    color: #696969
 }
 
 table tbody {
-    color: rgba(0,0,0,0.7)
+    color: #696969
 }
 
 table tbody {
@@ -17,7 +17,7 @@ table tbody {
 }
 
 table thead {
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .btn-primary {
@@ -37,15 +37,16 @@ app {
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, #008B8B 0%, #008080 70%);
+    background-color: #ff9933;
 }
 
     .sidebar .top-row {
-        background-color: rgba(0,0,0,0.4);
+        background-color: #FFEFCC;
     }
 
     .sidebar .navbar-brand {
-        font-size: 1.1rem;
+        font-size: 21px;
+        color: #ff9933;
     }
 
     .sidebar .oi {
@@ -56,12 +57,12 @@ app {
     }
 
     .sidebar .nav-item {
-        font-size: 0.9rem;
+        font-size: 10px
         padding-bottom: 0.5rem;
     }
 
         .sidebar .nav-item:first-of-type {
-            padding-top: 1rem;
+            padding-top: 10px;
         }
 
         .sidebar .nav-item:last-of-type {
@@ -69,8 +70,8 @@ app {
         }
 
         .sidebar .nav-item a {
-            color: #d7d7d7;
-            border-radius: 4px;
+            color: #FFF5EC;
+            border-radius: 50px;
             height: 3rem;
             display: flex;
             align-items: center;
@@ -96,7 +97,7 @@ app {
 }
 
 .valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
+    outline: 100px solid #26b050;
 }
 
 .invalid {
