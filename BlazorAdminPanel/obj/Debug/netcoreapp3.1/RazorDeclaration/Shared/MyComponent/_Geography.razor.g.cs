@@ -93,7 +93,7 @@ using Microsoft.JSInterop;
 #line 38 "C:\Users\User\Desktop\Diplom\BlazorAdminPanel\BlazorAdminPanel\Shared\MyComponent\_Geography.razor"
        
 
-    private const string selectedColor = "#51559E";
+    private const string selectedColor = "#fd7e14";
     private const string defaultColor = "#AEF8DE";
 
     public async void UpdateDB(object sender)

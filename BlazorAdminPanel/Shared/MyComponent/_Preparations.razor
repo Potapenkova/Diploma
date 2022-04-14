@@ -2,18 +2,18 @@
 @implements IDisposable
 
 
-<div class="card shadow mb-4">
+<div class="card mb-2">
     <div class="card-header py-3">
-        <h6 class="text-secondary font-weight-bold m-0">@Title</h6>
+        <h6 class="text font-weight-bold m-0">@Title</h6>
     </div>
     <div class="card-body">
         @if (Table != null)
         {
             @foreach (Row item in @Table.Rows)
             {
-                <h4 class="small font-weight-bold">@item.Name<span class="float-right">@item.Percent%</span></h4>
-                <div class="progress m-3">
-                    <div class="progress-bar progress-bar-striped @color" role="progressbar" style="width:@Math.Round(item.Percent, 0)%;" aria-valuenow="@Math.Round(item.Percent, 0)" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">@item.Percent%</span></div>
+                <h5 class="small font-weight-bold">@item.Name<span class="float-right">@item.Percent%</span></h5>
+                <div class="progress mb-2" style="height: 15px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width:@Math.Round(item.Percent, 0)%;" aria-valuenow="@Math.Round(item.Percent, 0)" aria-valuemin="0" aria-valuemax="100"><span class="sr-only">@item.Percent%</span></div>
                 </div>
             }
         }
@@ -35,7 +35,7 @@
     }
 
 
-    private string color;
+    /*private string color;
     private Random r = new Random();
 
     // Асинхронная инициализация при загрузке данной страницы
@@ -46,7 +46,7 @@
         color = colors[r.Next(0, colors.Length)];
 
         Table.UpdateEvent += UpdateDB;
-    }
+    }*/
 
 
     // Очистка перед удалением компонента

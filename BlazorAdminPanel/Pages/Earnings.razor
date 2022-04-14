@@ -14,8 +14,8 @@
 
 
 <div class="container-fluid">
-        <div class="card shadow text-center mb-4">
-        <h3 class="text-dark mb-0">Доходы текущего года</h3>
+    <div class="card shadow text-center mb-4">
+        <h3 class="text mb-1 py-1"><font color="#ff9933"><b>Доходы текущего года</b></font></h3>
     </div>
 
     <div class="row">
@@ -35,11 +35,11 @@
                     <_MonthAverage earningsTable="earningsTable" />
                 </div>
                 <div class="col-12 mb-4">
-                    <_TotalCustomers earningsTable="earningsTable" />
+                    <_TotalCustomers earningsTable="earningsTable"/>
                 </div>
 
                 <div class="col-12 mb-4">
-                    <_EarningsGrowth earningsTable="earningsTable" />
+                    <_EarningsGrowth earningsTable="earningsTable"/>
                 </div>
             </div>
         </div>
@@ -52,8 +52,8 @@
                     <div class="table-responsive mb-4">
                         <table class="table">
                             <tbody>
-                                <tr class="table-primary">
-                                    <th>Доход за аналогичный период прошлого года <small>для сравнения</small></th>
+                                <tr class="table-success">
+                                    <th>Доход за прошлого года</th>
                                     <th class="text-right">
                                         @BlazorAdminPanel.Models.EarningsTable.LastYearEarnings
                                     </th>

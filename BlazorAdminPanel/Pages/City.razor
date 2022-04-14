@@ -14,27 +14,20 @@
 
 <div class="container-fluid">
     <div class="card shadow text-center mb-4">
-        <h3 class="text-dark mb-0">Занятость складов</h3>
+        <h3 class="text-break mb-1 py-1"><font color="#ff9933"><b>Заполненность складов</b></font></h3>
     </div>
 
     <div class="row">
 
         <div class="col-lg-6 col-xl-6">
-            <_Preparations Table=@cityTable Title="Процент заполненности складов" />
-        </div>
-
-        <div class="col-lg-6 col-xl-6">
             <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="text-secondary font-weight-bold m-0">Таблица данных</h6>
-                </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-sm">
                             <thead>
                                 <tr>
-                                    <th class="text-left">Название</th>
-                                    <th class="text-right">Кол-во занятх ячеек</th>
+                                    <th class="text-left">Город</th>
+                                    <th class="text-right">Кол-во занятых ячеек</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -43,7 +36,7 @@
                                 {
                                     <tr>
                                         <td>@i.Name</td>
-                                        <td>
+                                        <td class="text-right">
                                             <input @bind-value="@i.NumCustomers" @onblur="() => cityTable.WritePS() " class="rounded-0 border-0 form-control float-right text-success text-right" type="text" maxlength="12" minlength="1">
                                         </td>
                                     </tr>
@@ -53,6 +46,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="col-lg-6 col-xl-6">
+            <_Preparations Table=@cityTable Title="Процент заполненности складов" />
         </div>
     </div>
 </div>

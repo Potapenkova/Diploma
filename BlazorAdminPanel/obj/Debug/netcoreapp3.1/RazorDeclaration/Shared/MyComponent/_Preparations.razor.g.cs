@@ -106,7 +106,7 @@ using BlazorAdminPanel.Models;
     }
 
 
-    private string color;
+    /*private string color;
     private Random r = new Random();
 
     // Асинхронная инициализация при загрузке данной страницы
@@ -117,7 +117,7 @@ using BlazorAdminPanel.Models;
         color = colors[r.Next(0, colors.Length)];
 
         Table.UpdateEvent += UpdateDB;
-    }
+    }*/
 
 
     // Очистка перед удалением компонента

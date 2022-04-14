@@ -39,9 +39,17 @@
         <environment include="Development">
             An unhandled exception has occurred. See browser dev tools for details.
         </environment>
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
     </div>
+
+    <footer style="background: #ffebb8;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4">
+                        <small class="text-left">Разработчик Потпенкова Екатерина Михайловна</small>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="_framework/blazor.server.js"></script>
     <script type="text/javascript" src="~/assets/js/jquery.min.js"></script>
@@ -61,12 +69,12 @@
                 hoverColor: '#ff9933',
                 hoverOpacity: 0.7,
                 normalizeFunction: 'linear',
-                scaleColors: ['#ff9933', '#ff9933'],
+                scaleColors: ['#ff9933', '#006400'],
                 selectedColor: '#ff9933',
                 multiSelectRegion: true,
 
                 // Выделенные регионы
-                selectedRegions: null, 
+                selectedRegions: null,
                 showTooltip: false,
 
             });
@@ -103,7 +111,7 @@
             datasets: [{
                 data: [10, 19, 3, 5, 2, 3, 10, 19, 3, 0, 0, 0],
                 backgroundColor: [
-                    'rgba(255, 196, 80, 0.5)' 
+                    'rgba(255, 196, 80, 0.5)'
                 ],
                 borderColor: [
                     'rgba(255, 110, 0, 0.4)',
@@ -192,7 +200,7 @@
             chart2.update();
         }
 
-                // ===== /Граф доходов =====
+                    // ===== /Граф доходов =====
     </script>
 
 </body>

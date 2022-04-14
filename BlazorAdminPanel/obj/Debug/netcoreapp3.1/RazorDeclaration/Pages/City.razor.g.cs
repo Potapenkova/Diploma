@@ -98,7 +98,7 @@ using BlazorAdminPanel.Shared.MyComponent;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 62 "C:\Users\User\Desktop\Diplom\BlazorAdminPanel\BlazorAdminPanel\Pages\City.razor"
+#line 59 "C:\Users\User\Desktop\Diplom\BlazorAdminPanel\BlazorAdminPanel\Pages\City.razor"
        
 
 
